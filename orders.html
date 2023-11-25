@@ -114,19 +114,16 @@
             <div class="level-left">
               <div class="level-item">
                 <p class="subtitle is-5">
-                  <strong>3 Customers</strong>
+                  <strong>2 Orders</strong>
                 </p>
               </div>
-              <p class="level-item">
-                <a href="new-customer.html" class="button is-success">New</a>
-              </p>
               <div class="level-item is-hidden-tablet-only">
                 <div class="field has-addons">
                   <p class="control">
                     <input
                       type="text"
                       class="input"
-                      placeholder="Book Name, ISBN..."
+                      placeholder="Order#, customer..."
                     />
                   </p>
                   <p class="control"><button class="button">Search</button></p>
@@ -143,81 +140,48 @@
           <table class="table is-hoverable is-fullwidth">
             <thead>
               <tr>
-                <th class="is-narrow">
-                  <input type="checkbox" />
-                </th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Country</th>
-                <th>Orders</th>
-                <th>Actions</th>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Books</th>
+                <th>Status</th>
+                <th class="has-text-right">Total</th>
               </tr>
             </thead>
             <tfoot>
               <tr>
-                <th class="is-narrow">
-                  <input type="checkbox" />
-                </th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Country</th>
-                <th>Orders</th>
-                <th>Actions</th>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Books</th>
+                <th>Status</th>
+                <th class="has-text-right">Total</th>
               </tr>
             </tfoot>
             <tbody>
               <tr>
-                <td><input type="checkbox" /></td>
+                <td>
+                  <a href="edit-order.html"><strong>787352</strong></a>
+                </td>
                 <td>
                   <a href="edit-customer.html"><strong>John Miller</strong></a>
                 </td>
-                <td><code>johnmiller@gmail.com</code></td>
-                <td>United States</td>
-                <td><a href="customer-orders.html">2</a></td>
-                <td>
-                  <div class="buttons">
-                    <a href="edit-customer.html" class="button is-small"
-                      >Edit</a
-                    >
-                    <a class="button is-small">Delete</a>
-                  </div>
-                </td>
+                <td>Nov 18, 17:38</td>
+                <td>2</td>
+                <td><span class="tag is-warning">In Progress</span></td>
+                <td class="has-text-right">$56.98</td>
               </tr>
               <tr>
-                <td><input type="checkbox" /></td>
                 <td>
-                  <a href="edit-customer.html"
-                    ><strong>Steven Johnson</strong></a
-                  >
+                  <a href="edit-order.html"><strong>123456</strong></a>
                 </td>
-                <td><code>stevenjohnson@gmail.com.uk</code></td>
-                <td>United Kingdom</td>
-                <td><a href="customer-orders.html">4</a></td>
                 <td>
-                  <div class="buttons">
-                    <a href="edit-customer.html" class="button is-small"
-                      >Edit</a
-                    >
-                    <a class="button is-small">Delete</a>
-                  </div>
+                  <a href="edit-customer.html"><strong>Mark Johnson</strong></a>
                 </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>
-                  <a href="edit-customer.html"><strong>Mary Stevens</strong></a>
-                </td>
-                <td><code>marystevens@gmail.com.br</code></td>
-                <td>Brazil</td>
-                <td><a href="customer-orders.html">6</a></td>
-                <td>
-                  <div class="buttons">
-                    <a href="edit-customer.html" class="button is-small"
-                      >Edit</a
-                    >
-                    <a class="button is-small">Delete</a>
-                  </div>
-                </td>
+                <td>Nov 30, 12:38</td>
+                <td>2</td>
+                <td><span class="tag is-success">Success</span></td>
+                <td class="has-text-right">$56.98</td>
               </tr>
             </tbody>
           </table>
