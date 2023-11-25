@@ -112,10 +112,10 @@
           <nav class="breadcrumb">
             <ul>
               <li>
-                <a href="books.html">customers</a>
+                <a href="books.html">Customers</a>
               </li>
               <li class="is-active">
-                <a href="new-book.html">New Customer</a>
+                <a href="new-book.html">Edit Customer</a>
               </li>
             </ul>
           </nav>
@@ -131,13 +131,14 @@
                     class="input is-large"
                     placeholder="e.g. Alex Smith"
                     required
+                    value="Alex Smith"
                   />
                 </div>
               </div>
               <div class="field">
                 <label for="" class="label">Email</label>
                 <div class="control has-icons-left">
-                  <input type="email" class="input" placeholder="e.g. AlexSmith@gmail.com" required>
+                  <input type="email" class="input" placeholder="e.g. AlexSmith@gmail.com" value="alexsmith@gmail.com">
                   <span class="icon is-small is-left">
                     <i class="fa fa-envelope"></i>
                   </span>
@@ -146,7 +147,7 @@
               <div class="field">
                 <label for="" class="label">Address</label>
                 <div class="control">
-                  <input type="text" class="input" placeholder="e.g. Number and Street Name"required>
+                  <input type="text" class="input" placeholder="e.g. Number and Street Name" value="123 Anywhere Street" required>
                 </div>
               </div>
               <div class="field">
@@ -155,6 +156,12 @@
                 </div>
               </div>
               <div class="columns is-multiline">
+                <div class="column is-12-tablet is-6-tablet is-4-desktop">
+                  <label for="" class="label">City</label>
+                  <div class="control">
+                    <input type="text" class="input" placeholder="e.g. Somehwere" value="Somewhere" required>
+                  </div>
+                </div>
                 <div class="column is-12-tablet is-6-tablet is-4-desktop">
                   <label for="" class="label">Postal Code / Zipcode</label>
                   <div class="control">
@@ -198,7 +205,7 @@
             </div>
             <div class="field">
               <div class="buttons">
-                <button class="button is-medium is-success" aria-labelledby="Create Customer">Create Book</button>
+                <button class="button is-medium is-success" aria-labelledby="Save Changes">Save Changes</button>
                 <button class="button is-medium is-light" aria-labelledby="Cancel">Cancel</button>
               </div>
             </div>
