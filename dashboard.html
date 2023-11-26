@@ -49,7 +49,7 @@
                   Profile
                 </div>
               </a>
-              <a class="navbar-item">
+              <a class="navbar-item modal-trigger" data-target="reportBug">
                 <div>
                   <span class="icon is-small">
                     <i class="fa fa-bug"></i>
@@ -331,5 +331,36 @@
         </div>
       </div>
     </section>
+    <!-- Modal Section Starts Here -->
+    <div class="modal" id="reportBug">
+      <div class="modal-background"></div>
+      <div class="card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Report A Bug</p>
+          <!-- Close Button -->
+          <button class="delete modal-close" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Notifcation Element -->
+          <div
+            class="notification is-success is-hidden modal-success-notification"
+          >
+            <button class="delete close-notification"></button>
+            <span class="fa fa-bug"></span>Thank you. Your bug has been
+            reported.
+          </div>
+          <textarea
+            class="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Let us know what problems you faced."
+          ></textarea>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success send-bug-report">Send</button>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
